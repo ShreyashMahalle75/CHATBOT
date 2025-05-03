@@ -3,7 +3,13 @@ import pandas as pd
 import google.generativeai as genai
 
 # Load dataset
-df = pd.read_csv("dhttps://drive.google.com/file/d/1tap-0TxL4r2aC3yROyOvo1ao0mUz2NcB/view?usp=sharing")
+import pandas as pd
+
+url = "https://drive.google.com/file/d/1tap-0TxL4r2aC3yROyOvo1ao0mUz2NcB/view?usp=sharing"  # replace with your actual ID 
+df = pd.read_csv(url)
+
+# Optional: print the first few rows to check
+print(df.head())
 
 # Configure Gemini API
 genai.configure(api_key=st.secrets["AIzaSyDjn79AMW-V9C2nPUyALtNFlgK6OJfIZJI"])
