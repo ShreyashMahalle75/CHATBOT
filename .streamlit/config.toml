@@ -1,2 +1,5 @@
 [general]
 email = "mahalleshreyash75@gmail.com"
+[api_keys]
+google_api_key = "AIzaSyDjn79AMW-V9C2nPUyALtNFlgK6OJfIZJI"
+
