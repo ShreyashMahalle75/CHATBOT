@@ -3,14 +3,7 @@ import pandas as pd
 import google.generativeai as genai
 
 # Load dataset
-import pandas as pd
-
-url = "https://drive.google.com/file/d/1tap-0TxL4r2aC3yROyOvo1ao0mUz2NcB/view?usp=sharing"  # replace with your actual ID 
-df = pd.read_csv(url)
-
-# Optional: print the first few rows to check
-print(df.head())
-
+df = pd.read_csv("data\large_symptom_treatment.csv")
 # Configure Gemini API
 genai.configure(api_key=st.secrets["AIzaSyDjn79AMW-V9C2nPUyALtNFlgK6OJfIZJI"])
 model = genai.GenerativeModel("gemini-pro")
