@@ -3,7 +3,7 @@ import pandas as pd
 import google.generativeai as genai
 
 # Load dataset
-df = pd.read_csv("data\large_symptom_treatment.csv")
+df = pd.read_csv("data/large_symptom_treatment.csv")
 # Configure Gemini API
 genai.configure(api_key=st.secrets["AIzaSyDjn79AMW-V9C2nPUyALtNFlgK6OJfIZJI"])
 model = genai.GenerativeModel("gemini-pro")
